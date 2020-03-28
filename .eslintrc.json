@@ -1,5 +1,12 @@
 {
-  "extends": ["airbnb", "airbnb/hooks", "prettier", "prettier/react"],
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+    "prettier/react"
+  ],
   "rules": {
     "react/prop-types": 0
   },
