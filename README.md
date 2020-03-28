@@ -2,9 +2,9 @@
 
 This is a react boilerplate using parcel.
 
-## Installation
+## Optional Configuration
 
-### Configure Babel (Optional)
+### Babel
 
 If you want to customize babel settings, install the following packages:
 
@@ -32,5 +32,31 @@ Add the following to `.eslintrc.json`:
 ```json
 {
   "parser": "babel-eslint"
+}
+```
+
+### CSS In JS
+
+Install emotion:
+
+```bash
+npm install @emotion/core @emotion/babel-preset-css-prop
+```
+
+Add this to your `.bablerc`:
+
+```json
+{
+  "presets": [
+    "@babel/preset-react",
+    "@babel/preset-env",
+    [
+      "@emotion/babel-preset-css-prop",
+      {
+        "sourceMap": false
+      }
+    ]
+  ],
+  […]
 }
 ```
