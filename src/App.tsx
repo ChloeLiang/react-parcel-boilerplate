@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import ReactDOM from 'react-dom';
 
-const App = () => {
+const App: FunctionComponent = () => {
   return <h1>Hello world</h1>;
 };
 

@@ -2,14 +2,29 @@
   "extends": [
     "airbnb",
     "airbnb/hooks",
+    "plugin:import/typescript",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "prettier",
     "prettier/react"
   ],
+  "plugins": ["@typescript-eslint"],
   "rules": {
-    "react/prop-types": 0
+    "react/prop-types": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
   },
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module",
