@@ -5,15 +5,21 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "type:check": "tsc --noEmit",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@testing-library/react": "^10.0.1",
+    "@types/jest": "^25.1.4",
+    "@types/node": "^13.9.5",
     "@types/reach__router": "^1.3.1",
     "@types/react": "^16.9.26",
     "@types/react-dom": "^16.9.5",
@@ -26,9 +32,11 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.0",
+    "jest": "^25.2.3",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.0.2",
     "sass": "^1.26.3",
+    "ts-jest": "^25.2.1",
     "typescript": "^3.8.3"
   },
   "dependencies": {
