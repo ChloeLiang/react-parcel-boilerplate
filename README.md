@@ -56,7 +56,6 @@ Add this to your `.bablerc`:
         "sourceMap": false
       }
     ]
-  ],
-  […]
+  ]
 }
 ```

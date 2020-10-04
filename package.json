@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
+    "start": "parcel src/index.html",
     "build": "parcel build src/index.html",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
@@ -32,11 +32,11 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.0",
-    "jest": "^25.2.3",
+    "jest": "^26.4.2",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.0.2",
     "sass": "^1.26.3",
-    "ts-jest": "^25.2.1",
+    "ts-jest": "^26.4.1",
     "typescript": "^3.8.3"
   },
   "dependencies": {
